@@ -1,0 +1,93 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hipku - Convert IP to Poetry. Bahasa Indonesia Version.</title>
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" href="images/favicon/apple-touch-icon-152x152.png">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="images/favicon/mstile-144x144.png">
+    <link rel="icon" href="images/favicon/favicon-32x32.png" sizes="32x32">
+
+    <link href="css/ghpages-materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/prism.css" rel="stylesheet" />
+    <script src="../dist/hipku.id.min.js"></script>
+</head>
+
+<body>
+  <nav>
+    <div class="container">
+      <a href="index.html" class="brand-logo"><img src="images/whitelogo.png" /> HIPKU</a>
+    </div>
+  </nav>
+  <div class="row white z-depth-1">
+    <div class="container">
+      <ul class="tabs">
+        <li class="tab"><a href="#converts">Convert</a></li>
+        <li class="tab"><a href="#decodes">Decode</a></li>
+      </ul>
+    </div>
+  </div>
+    <div class="container">
+        <div id="converts" class="section row">
+            <h2 class="header">Convert IP Address to Haiku</h2>
+            <div class="col s8 offset-s2">
+                <div><input placeholder="IP Address" type="text" id="ips" value=""></div>
+                <div><a id="convert" class="waves-effect button raised">convert</a></div>
+                <div>
+                    <textarea id="convertan" class="s8"></textarea>
+                </div>
+            </div>
+        </div>
+        <div id="decodes" class="section row">
+            <h2 class="header">Decode Haiku to IP Address</h2>
+            <div class="col s8 offset-s2">
+                <div>
+                    <textarea id="haikus"></textarea>
+                </div>
+                <div>
+                    <a id="decode" class="waves-effect button raised">decode</a>
+                </div>
+                <div id="decodean"></div>
+            </div>
+        </div>
+    </div>
+<script>
+document.getElementById('convertan').value = '';
+document.getElementById('convert').addEventListener('click',converthis);
+
+function converthis(){
+    var val = document.getElementById('ips').value;
+    var cvrt = Hipku.encode(val);
+    document.getElementById('convertan').value = cvrt;
+}
+document.getElementById('decodean').innerHTML = '';
+document.getElementById('decode').addEventListener('click',converthat);
+
+function converthat(){
+    var val = document.getElementById('haikus').value;
+    var cvrt = Hipku.decode(val);
+    document.getElementById('decodean').innerHTML = cvrt;
+}
+</script>
+</body>
+
+  <script src="js/jquery.js">
+  </script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/waves.js"></script>
+  <script src="js/prism.js"></script>
+  <script src="js/tabs.js"></script>
+  <script src="js/init.js"></script>
+  <style>
+  textarea {
+    width: 100%;
+    min-height: 100px;
+    margin-bottom: 10px;
+  }
+  a.brand-logo img {
+    vertical-align: middle;
+  }
+  </style>
+</html>
