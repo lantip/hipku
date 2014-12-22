@@ -35,3 +35,8 @@ the lines can be separated either by the newline character `\n` or by a space. B
     hipku.encode(`127.0.0.1`);
 
     hipku.decode('The weary red dove fights in the empty tundra. Jasmine petals dance.');
+
+### Changelog
+
+    use hipku.id.js or index.id.js for Bahasa Indonesia version. 
+    it's not necesserally a haiku, unfortunately.
