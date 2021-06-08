@@ -7,6 +7,8 @@
  */
 /*
  ** Bahasa Indonesia Version by Rony Lantip 2014
+ ** it's not necessarily a haiku, more like a lame poets
+ ** it has to be easier to remember, that's the point. isn't that so? :D
  */
 ;
 var Hipku = (function() {
@@ -216,29 +218,29 @@ var Hipku = (function() {
         var key;
 
         if (ipv6) {
-            key = [adjectives,
+            key = [nouns,
+                adjectives,
                 nouns,
                 adjectives,
                 nouns,
+                adjectives,
+                nouns,
+                adjectives,
+                nouns,
+                adjectives,
                 verbs,
-                adjectives,
-                adjectives,
-                adjectives,
-                adjectives,
-                adjectives,
                 nouns,
                 adjectives,
-                nouns,
                 verbs,
-                adjectives,
-                nouns
+                nouns,
+                adjectives
             ];
         } else {
-            key = [animalAdjectives,
+            key = [animalNouns,
                 animalColors,
-                animalNouns,
-                natureAdjectives,
+                animalAdjectives,
                 natureNouns,
+                natureAdjectives,
                 plantNouns,
                 plantVerbs
             ];
@@ -276,6 +278,7 @@ var Hipku = (function() {
 
         return haiku;
     }
+
 
     /*
      ** I made a slight changes too in this function so the word will flows better
@@ -634,6 +637,7 @@ var Hipku = (function() {
     /*
      ** IPv4 dictionaries
      */
+
 
     animalAdjectives = ['gemuk',
         'kenyang',
@@ -1557,6 +1561,7 @@ var Hipku = (function() {
         'memayungi'
     ];
 
-    module.exports = publicMethods;
+
+    return publicMethods;
 
 })();
