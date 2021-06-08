@@ -234,12 +234,13 @@ var Hipku = (function() {
                 nouns
             ];
         } else {
-            key = [animalAdjectives,
+            key = [animalNouns,
                 animalColors,
-                animalNouns,
-                natureAdjectives,
+                animalAdjectives,
+                animalVerbs,
                 natureNouns,
                 plantNouns,
+                natureAdjectives,
                 plantVerbs
             ];
         }
@@ -323,7 +324,7 @@ var Hipku = (function() {
                 octet,
                 newLine,
                 octet,
-                'di',
+                octet,
                 octet,
                 octet,
                 period,
@@ -635,22 +636,23 @@ var Hipku = (function() {
      ** IPv4 dictionaries
      */
 
-    animalAdjectives = ['gemuk',
-        'kenyang',
-        'pintar',
-        'lamban',
-        'bodoh',
-        'penakut',
-        'penurut',
-        'lapar',
-        'kesepian',
-        'liar',
-        'bingung',
-        'kasar',
-        'pendiam',
-        'pemikir',
-        'gugup',
-        'setia'
+
+    animalAdjectives = ['lompat',
+        'duduk',
+        'lari',
+        'tidur',
+        'makan',
+        'minum',
+        'dandan',
+        'mojok',
+        'sedih',
+        'murung',
+        'muram',
+        'riang',
+        'hinggap',
+        'nangis',
+        'senang',
+        'beol'
     ];
 
     animalColors = ['coklat',
@@ -689,40 +691,40 @@ var Hipku = (function() {
         'serigala'
     ];
 
-    animalVerbs = ['duduk',
-        'murung',
-        'nangis',
-        'nyelam',
-        'makan',
-        'gelut',
-        'ngaum',
-        'ngamuk',
-        'lompat',
-        'baring',
-        'ngolet',
-        'lari',
-        'tidur',
-        'girang',
-        'bangun',
-        'nguap'
+    animalVerbs = ['di',
+        'di',
+        'di',
+        'di',
+        'di',
+        'di',
+        'di',
+        'di',
+        'di',
+        'di',
+        'di',
+        'di',
+        'di',
+        'di',
+        'di',
+        'di'
     ];
 
-    natureAdjectives = ['tua',
-        'terlantar',
-        'terindah',
-        'ramai',
-        'terpencil',
-        'kosong',
-        'berkabut',
-        'segar',
-        'dingin',
-        'tinggi',
-        'damai',
-        'tenang',
-        'berdebu',
-        'keramat',
-        'terang',
-        'perawan'
+    natureAdjectives = ['daun',
+        'batang',
+        'pokok',
+        'bunga',
+        'akar',
+        'pohon',
+        'kayu',
+        'hati',
+        'tulang',
+        'ranting',
+        'dahan',
+        'kulit',
+        'rumpun',
+        'hutan',
+        'kebun',
+        'ladang'
     ];
 
     natureNouns = ['lembah',
@@ -1556,7 +1558,6 @@ var Hipku = (function() {
         'mengajari',
         'memayungi'
     ];
-
     module.exports = publicMethods;
 
 })();

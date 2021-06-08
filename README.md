@@ -4,6 +4,8 @@ A tiny javascript library to encode IPv6 and IPv4 addresses as haiku.
 
 For full documentation and a working demo, check out http://gabrielmartin.net/projects/hipku
 
+> For Bahasa Indonesia version demo, check this page: http://lantip.github.io/hipku/
+
 ## Installation
 
 Install with `npm install hipku` or use a browser-ready file in the `dist` folder.
@@ -39,4 +41,4 @@ the lines can be separated either by the newline character `\n` or by a space. B
 ### Changelog
 
     use hipku.id.js or index.id.js for Bahasa Indonesia version. 
-    it's not necesserally a haiku, unfortunately.
+    the ipv6 version is still not tested.
