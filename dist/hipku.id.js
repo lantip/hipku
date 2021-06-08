@@ -7,8 +7,6 @@
  */
 /*
  ** Bahasa Indonesia Version by Rony Lantip 2014
- ** it's not necessarily a haiku, more like a lame poets
- ** it has to be easier to remember, that's the point. isn't that so? :D
  */
 ;
 var Hipku = (function() {
@@ -218,30 +216,29 @@ var Hipku = (function() {
         var key;
 
         if (ipv6) {
-            key = [nouns,
-                adjectives,
+            key = [adjectives,
                 nouns,
                 adjectives,
                 nouns,
-                adjectives,
-                nouns,
-                adjectives,
-                nouns,
-                adjectives,
                 verbs,
+                adjectives,
+                adjectives,
+                adjectives,
+                adjectives,
+                adjectives,
                 nouns,
                 adjectives,
-                verbs,
                 nouns,
-                adjectives
+                verbs,
+                adjectives,
+                nouns
             ];
         } else {
-            key = [animalNouns,
+            key = [animalAdjectives,
                 animalColors,
-                animalAdjectives,
-                animalVerbs,
-                natureNouns,
+                animalNouns,
                 natureAdjectives,
+                natureNouns,
                 plantNouns,
                 plantVerbs
             ];
@@ -279,7 +276,6 @@ var Hipku = (function() {
 
         return haiku;
     }
-
 
     /*
      ** I made a slight changes too in this function so the word will flows better
@@ -323,7 +319,6 @@ var Hipku = (function() {
             ];
         } else {
             schema = ['Si',
-                octet,
                 octet,
                 octet,
                 newLine,
@@ -662,7 +657,7 @@ var Hipku = (function() {
         'hitam',
         'biru',
         'terang',
-        'abu-abu',
+        'abu',
         'khaki',
         'gelap',
         'belang',
@@ -694,22 +689,22 @@ var Hipku = (function() {
         'serigala'
     ];
 
-    animalVerbs = ['meringkuk',
+    animalVerbs = ['duduk',
         'murung',
-        'menangis',
-        'menyelam',
+        'nangis',
+        'nyelam',
         'makan',
-        'kelahi',
-        'menggeram',
-        'berburu',
-        'melompat',
-        'berbaring',
-        'meregang',
+        'gelut',
+        'ngaum',
+        'ngamuk',
+        'lompat',
+        'baring',
+        'ngolet',
         'lari',
         'tidur',
         'girang',
         'bangun',
-        'menguap'
+        'nguap'
     ];
 
     natureAdjectives = ['tua',
@@ -732,14 +727,14 @@ var Hipku = (function() {
 
     natureNouns = ['lembah',
         'padang',
-        'rerumputan',
+        'ladang',
         'lereng',
         'hutan',
-        'padang rumput',
+        'sahara',
         'hutan',
         'ngarai',
-        'pegunungan',
-        'persawahan',
+        'gunung',
+        'sawah',
         'sungai',
         'bukit',
         'gumuk',
@@ -748,35 +743,35 @@ var Hipku = (function() {
         'rawa'
     ];
 
-    plantNouns = ['lembayung',
+    plantNouns = ['jati',
         'duwet',
         'nanas',
-        'berbunga',
+        'mangga',
         'palem',
-        'kelapa',
-        'kambium',
-        'melati',
-        'teratai',
+        'nyiur',
+        'anggrek',
+        'puspa',
+        'karet',
         'duku',
         'benih',
-        'cemara',
-        'cempaka',
-        'kecubung',
-        'bercabang',
-        'jati'
+        'pakis',
+        'putik',
+        'talas',
+        'rotan',
+        'bambu'
     ];
 
     plantVerbs = ['tertiup',
         'meranggas',
         'menari',
         'menggesek',
-        'luruh',
-        'gugur',
-        'tumbuh',
+        'meluruh',
+        'bersemi',
+        'berbuah',
         'bertumpuk',
-        'ambruk',
-        'roboh',
-        'hidup',
+        'merunduk',
+        'bertumbang',
+        'berkembang',
         'meliuk',
         'berpusing',
         'melayang',
@@ -1562,6 +1557,6 @@ var Hipku = (function() {
         'memayungi'
     ];
 
-    return publicMethods;
+    module.exports = publicMethods;
 
 })();
